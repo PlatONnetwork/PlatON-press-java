@@ -108,11 +108,11 @@
     <repositories>
         <repository>
             <id>platon-dev</id>
-            <url>http://192.168.9.39:8081/repository/maven-releases/</url>
+            <url>https://sdk.platon.network/nexus/content/groups/public/</url>
         </repository>
         <repository>
             <id>platon-snapshots</id>
-            <url>http://192.168.9.39:8081/repository/maven-snapshots/</url>
+            <url>https://sdk.platon.network/nexus/content/groups/public/</url>
         </repository>
     </repositories>
 
