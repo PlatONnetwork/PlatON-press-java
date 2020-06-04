@@ -27,4 +27,11 @@
 			<outputDirectory>/platon-press-config/</outputDirectory>
 		</file>
 	</files>
+
+	<fileSets>
+		<fileSet>
+			<directory>${basedir}/contract</directory>
+			<outputDirectory>/contract</outputDirectory>
+		</fileSet>
+	</fileSets>
 </assembly>

@@ -4,11 +4,15 @@ spring:
     main:
         banner-mode: off
 press:
-    #节点rpc端口
-    node-url: http://192.168.9.190:6666
-    #节点公钥
-    node-public-key: "0x..........."
-
+    tx-type: TRANFER,WASM,EVM
+    tx-rate: 5,3,2
+    chain-id: 102
+    key-size: 150
+    node-url: http://127.0.0.1:6789
+    node-public-key: "0x{{ nodeid.stdout }}"
+    evm-addr: "0x447a8f9d76d2fffe46fd18972d91e49ab20a2745"
+    wasm-addr: "0x4d1b04ca0a56b8afde88cc6426aa142be1ddfcd5"
+    consumer-thread-sleep-duration: 0
 logging:
     pattern:
         console: "%date %msg%n"
@@ -19,4 +23,4 @@ logging:
         org.web3j: error
         com.platon.tools: info
     file:
-        name: ./logs/pressdemo.log
+        name: ./logs/press.log
